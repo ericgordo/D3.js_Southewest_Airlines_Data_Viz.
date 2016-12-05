@@ -47,13 +47,18 @@ With this feedback, I made two crucial changes.
 -I created a record for “Average” so that when the chart loaded, Southwest was compared to the average of all carriers, thus showing the large gap, but not overcrowding the map. 
 
 ## Resources 
-General d3.js help and documentation: 
+#### General d3.js help and documentation: 
 https://leanpub.com/D3-Tips-and-Tricks/read
+
 https://bost.ocks.org/mike/ 
+
 http://chimera.labs.oreilly.com/books/1230000000345/index.html 
+
 https://d3js.org/
+
 https://www.udacity.com/course/data-visualization-and-d3js--ud507
 
-Inspiration with Buttons:
+
+#### Inspiration with Buttons:
 http://bl.ocks.org/d3noob/5d621a60e2d1d02086bf
 
