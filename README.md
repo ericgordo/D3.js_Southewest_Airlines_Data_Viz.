@@ -33,6 +33,7 @@ charts on the plot. "I like that I can get rid of some of the lines, but there a
 
 #### Feedback 3
 Another individual liked the overall chart, but wanted the buttons to also help with the color coordination. 
+
 -I therefore added the color fill to each button, so when it is clicked, it filled with the same color as the line on the plot. 
 
 #### Feedback 4
@@ -40,7 +41,9 @@ A final individual recommended that I start the plot with some sort of compariso
 
 
 With this feedback, I made two crucial changes. 
+
 -I outlined each button with a black border, to try to make them more clearly buttons. 
+
 -I created a record for “Average” so that when the chart loaded, Southwest was compared to the average of all carriers, thus showing the large gap, but not overcrowding the map. 
 
 ## Resources 
