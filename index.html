@@ -20,6 +20,11 @@
 			font-family: Lato;
 			font-size: 13px;
 		}
+		.axis {
+			fill: none;
+  		stroke: black;
+
+		}
 		div.tooltip {
 			position: absolute;
 			text-align: center;
@@ -62,21 +67,17 @@
 </script>
 </head>
 <body >
-	<p> This data project was an investigation data found from the United
+	<p> This data project was an investigation into data found from the United
 		States Department of Transpiration, and available from the American
-		Statistical Associations' website regarding the flight information
-		of United States Domestic Travel from 2003 to 2008. The data was
-		taken from several different downloaded CSV files, and analyzed in a
-		separate Python Notebook, which can be found in the GitHub repository.		From investigation, it was clear that one important finding was worth
-		sharing in this visualization. <br><br> Southwest Airlines has operated more
-		Domestic flights then all other U.S. carriers for every year, and
-		it 's not even close. While Sotuhwest seems to be increasing their opperated flights steadily,
-		other airlines have fluctuated in their numbers, or decreased.
-		This finding for me was unexpected, and very interesting. <br>
-		Below, you can take a look at some of the other airlines by
-		selecting their name from the list on the right. Additionally,
-		if you want the actual data point, hover over over points to get
-		more information. <br> <br>*All data was found from http://stat-computing.org/dataexpo/2009/the-data.html.
+		Statistical Associations' website, regarding the flight information of
+		United States Domestic Travel from 2003 to 2008. The data was taken from
+		several different downloaded CSV files, and analyzed in a separate Python
+		Notebook (which can be found in my GitHub repository). From investigation,
+		it was clear that one important finding was worth sharing in this visualization. <br>
+
+		<br>Southwest Airlines has operated more Domestic flights then all other U.S. carriers for every year, and it 's not even close. While Southwest seems to be increasing their operated flights steadily, other airlines have fluctuated in their numbers, or decreased. This finding for me was unexpected, and very interesting. 
+	Below, you can take a look at some of the other airlines by selecting their name from the list on the right. Additionally, if you want the actual numbers, hover over over the points to get more information. 
+ <br> <br>*All data was found from http://stat-computing.org/dataexpo/2009/the-data.html.
 	</p>
 	<div id = "container" ></div>
 	<p>
@@ -90,9 +91,9 @@
 			right: 80,
 			bottom: 40,
 			left: 100
-		},
-		width = 800 - margin.left - margin.right,
-		height = 500 - margin.top - margin.bottom;
+	},
+			width = 800 - margin.left - margin.right,
+			height = 500 - margin.top - margin.bottom;
 
 	//Create SVG
 	var svg = d3.select("#container")
@@ -101,7 +102,7 @@
 		.attr("height", height + margin.top + margin.bottom)
 		.append("g")
 		.attr("class", "chart")
-		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");;
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 	//Title
 	svg.append("text")
@@ -204,14 +205,14 @@
 		svg.append("path")
 			.attr("d", line(d.values))
 			.attr("stroke", colors(d.key))
-			.attr("stroke-width", 2)
+			.attr("stroke-width", 4)
 			.attr("class", i)
 			.attr("fill", "none")
 			.style("opacity", function() {
 				if (d.key == "Southwest Airlines Co." | d.key == "Average") {
-					return 1
+					return 1;
 				} else {
-					return 0
+					return 0;
 				};
 			});
 
