@@ -2,6 +2,8 @@
 ## by Eric Gordon
 This Project is my first attempt at using D3 to create a data Visualization. 
 
+[Click Here to see the Final Data Vizualization in Action](http://bl.ocks.org/ericgordo/raw/537f40a3d71dad52cee52813e3a57b8a/)
+
 ### Summary 
 This project tries to show the numerical difference at which Southwest Airlines seems to operate versus all major United States 
 Airline companies. Not only does Southwest have more flights annually than every other carrier, but it also seems to be increasing 
